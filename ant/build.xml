@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Aug 13, 2017 10:06:13 PM                                                        
+
+     ant project    
+     ant test
+                   
+     kenu                                                                
+     ====================================================================== -->
+<project name="ant project" default="compile">
+	<description>
+            ant test
+    </description>
+
+	<!-- ================================= 
+          target: compile              
+         ================================= -->
+	<target name="compile" depends="init" description="ant test">
+		<mkdir dir="target" />
+		<javac srcdir="src" destdir="target" classpath="jarfile" debug="on" />
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: init                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="init">
+	</target>
+
+</project>
