@@ -8,11 +8,11 @@ import java.util.Map;
 public class UserDao {
     private DataSource dataSource;
 
+    private JdbcTemplate jdbcTemplateObject;
+
     public JdbcTemplate getJdbcTemplateObject() {
         return jdbcTemplateObject;
     }
-
-    private JdbcTemplate jdbcTemplateObject;
 
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
